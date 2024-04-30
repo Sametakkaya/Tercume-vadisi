@@ -3,12 +3,20 @@
 }
 .responsive-img {
   object-fit: cover;
-  object-position: 50% 60%;
+  object-position: 50% 45%;
   max-width: 100%;
-  max-height: 400px;
+  max-height: 300px;
   width: 100%;
   position: relative;
 }
+/* .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(32, 30, 30, 0.6);
+  color: white;
+} */
 
 .circle {
   width: 40px;
@@ -24,19 +32,49 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
   border: none;
   border-radius: 12px;
 }
-
-.btn:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+.active-button {
+  border-color: rgba(218, 225, 227, 0.474) !important; /* Aktif butonun kenarlık rengini değiştir */
 }
 
 .fa-question, .fa-expeditedssl, .fa-money-bill-1{
- font-size: 200%;
+ font-size: 400%;
+}
+.sunum i{
+  color: rgb(255, 255, 255);
+  background-color: rgb(18, 196, 223);
+  border-radius: 50%;
+  box-shadow: #9c9f9c -5px 4px 5px;
+  font-size: xx-large;
+
+}
+.sunum div{
+  min-width: 300px;
+}
+.rectangle{
+  margin-top: 10%;
+}
+.teklif{
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+.teklif .form{
+  border-right: 1px solid #afafaf; /* İstediğiniz rengi ve kalınlığı ayarlayabilirsiniz */
+}
+.teklif .btn{
+  border: #4CAF50 2px solid;
+  border-radius: 20px;
+  color: #4dc247;
+  font-weight: bold;
+}
+.teklif .btn:hover{
+  color: #ffffff;
+  background-color: #4dc247;;
+}
+.footer-container{
+  background-color: rgba(62, 66, 67, 0.202);
 }

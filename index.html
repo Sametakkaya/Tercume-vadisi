@@ -11,14 +11,15 @@
 </head>
 
 <body>
-  <div class="top-navbar container row mx-auto">
+  <div class="top-navbar container row mx-auto d-none d-lg-flex">
     <div class="col d-flex justify-content-start"> <!-- Soldaki img -->
       <a href="#"><img class="py-3" style="width: 40%;" src="./images/logo.png" alt=""></a>
     </div>
+    Whatsapp’dan İletişime Geçin
 
     <div class="col d-flex justify-content-end mt-auto"> <!-- Sağdaki img -->
 
-      <a href="whatsapp://send?phone=+123456789" class="d-flex text-success text-decoration-none">
+      <a href="whatsapp://send?phone=+905383161462" class="d-flex text-success text-decoration-none">
         <div class="m-2"><i class="fab fa-whatsapp" style="font-size: xx-large;"></i></div>
 
         <div> <!-- Sağ taraftaki yazılar -->
@@ -30,7 +31,9 @@
     </div>
   </div>
   <nav style="font-size: large;" class="navbar navbar-expand-lg navbar-light bg-info">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+    <a class="navbar-brand d-lg-none d-md-block d-sm-block w-50" href="#"><span class=""><img class="w-50 m-3"
+          src="./images/logo-detay.png" alt=""></span></a>
+    <button class="navbar-toggler m-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -105,10 +108,11 @@
   </nav>
 
   <div style="position: relative;">
-    <img class="img-fluid responsive-img" src="./images/vitrin.jpg" alt="">
-    <div style="position: absolute; top: 30%; left: 10%; color: aliceblue; font-size: x-large;">
+    <img class="img-fluid responsive-img" src="./images/peakpx (2).jpg" alt="">
+    <!-- <div class="centered">
       <p><b>Noter tasdikli yazılı çeviri hizmetleri!</b></p>
-    </div>
+      <p>Kaliteli, hızlı ve güvenilir hizmet alabilirsiniz.</p>
+    </div> -->
   </div>
 
 
@@ -137,32 +141,163 @@
   </div>
 
 
-  <div class="bg-info text-center my-5 button-container">
-    <button class="btn p-4 border-right text-light" type="button"
-      onclick="writeText('Portakal Tercüme olarak size en uygun çeviri hizmetini verebilmek için alanında uzman tercüman ekibimiz ile çalışıyor, en uygun tercüme hizmetini sunuyoruz.  Ayrıca almak istediğiniz çeviri hizmetinin sektörün en kaliteli tercümanlık bürosu tarafından yapılması bir çok avantajı da beraberinde getirmektedir. Hızlı ve güvenilir hizmet kapasitesine sahip çevirmen ekibiyle Portakal Tercüme süresiz arşiv ve hızlı kargo özellikleri ile Türkiyenin lider tercüme ajansıdır.En ucuz çeviri hizmetlerini sağlayan firmalardan biri olan Portakal Tercüme Ofisi, yeminli, noter tasdikli, apostil tasdikli uygun tercümanlık hizmetleri de vermektedir.')"><i
+  <div class="bg-info text-center my-5">
+    <button id="button1" class="btn p-4 border-right text-light" type="button"
+      onclick="selectButton(this); writeText('<p>Tercüme Vadisi olarak size en uygun çeviri hizmetini verebilmek için alanında uzman tercüman ekibimiz ile çalışıyor, en uygun tercüme hizmetini sunuyoruz.</p> <p>Ayrıca almak istediğiniz çeviri hizmetinin sektörün en kaliteli tercümanlık bürosu tarafından yapılması bir çok avantajı da beraberinde getirmektedir. Hızlı ve güvenilir hizmet kapasitesine sahip çevirmen ekibiyle Portakal Tercüme süresiz arşiv ve hızlı kargo özellikleri ile Türkiyenin lider tercüme ajansıdır.</p> <p>En ucuz çeviri hizmetlerini sağlayan firmalardan biri olan Portakal Tercüme Ofisi, yeminli, noter tasdikli, apostil tasdikli uygun tercümanlık hizmetleri de vermektedir.')"><i
         class="fa-solid fa-question"></i> <br> Neden
       Tercüme Vadisi ?</button>
 
-    <button class="btn p-4 border-right text-light" type="button"
-      onclick="writeText('Portakal Tercüme, 128 bit SSL güvenliği ile korunan ve kredi kartı güvenliğiniz için sadece 3D şifreleme üzerinden online tercüme hizmeti almanızı sağlayan bir sistemdir.  Online olarak ödeme yaparken, girdiğiniz eposta ve iletişim bilgileriniz portakaltercume.com.tr güvencesindedir. Bu bilgiler hiçbir surette sizin haricinizde bir kimseyle paylaşılmaz. Kredi kart bilgileriniz bankacılık kanunu gereği kesinlikle sistemimizde kayıt altına alınmaz.')"><i
+    <button id="button2" class="btn p-4 border-right text-light" type="button"
+      onclick="selectButton(this); writeText('<p>Tercüme Vadisi, 128 bit SSL güvenliği ile korunan ve kredi kartı güvenliğiniz için sadece 3D şifreleme üzerinden online tercüme hizmeti almanızı sağlayan bir sistemdir.</p> <p>Online olarak ödeme yaparken, girdiğiniz eposta ve iletişim bilgileriniz portakaltercume.com.tr güvencesindedir. Bu bilgiler hiçbir surette sizin haricinizde bir kimseyle paylaşılmaz. Kredi kart bilgileriniz bankacılık kanunu gereği kesinlikle sistemimizde kayıt altına alınmaz.</p>')"><i
         class="fa-brands fa-expeditedssl"></i> <br>
       Tercüme Vadisi Güvenilir mi ?</button>
 
-    <button class="btn p-4 text-light" type="button"
-      onclick="writeText('Portakal Tercüme, UDİÇED üyesi tercümanlar ile çalışmaktadır. Aradığınız tercüme bürosunda tercüme fiyatlarının uygun olması önemli bir kriter olabilir. Biz hem en uygun fiyatı hemde en kaliteli tercüme hizmetini sağlıyoruz.Tercüme sektöründe en ucuz tercüme hizmetleri ve yenilikçi çözümleriyle öncü tercüme büroları arasında yer almaktadır. Acil çeviri, Profesyonel Çeviri, Yazılı çeviri, Sözlü çeviri gibi ihtiyaçlarınızda yanınızda. Tercüme ofisimiz 20 yıllık deneyimi ve kaliteyi uygun tercüme fiyatları ile hizmetinizdedir.')"><i
+    <button id="button3" class="btn p-4 text-light" type="button"
+      onclick="selectButton(this); writeText('<p>Tercüme Vadisi, UDİÇED üyesi tercümanlar ile çalışmaktadır. Aradığınız tercüme bürosunda tercüme fiyatlarının uygun olması önemli bir kriter olabilir. Biz hem en uygun fiyatı hemde en kaliteli tercüme hizmetini sağlıyoruz.</p> <p>Tercüme sektöründe en ucuz tercüme hizmetleri ve yenilikçi çözümleriyle öncü tercüme büroları arasında yer almaktadır. Acil çeviri, Profesyonel Çeviri, Yazılı çeviri, Sözlü çeviri gibi ihtiyaçlarınızda yanınızda. Tercüme ofisimiz 20 yıllık deneyimi ve kaliteyi uygun tercüme fiyatları ile hizmetinizdedir.</p>')"><i
         class="fa-regular fa-money-bill-1"></i> <br> En
       Ucuz Tercüme Hizmetini Nasıl Alırım ?</button>
-
   </div>
 
-  <div class="container">
+  <div class="container p-3">
     <p id="text"></p>
   </div>
 
+  <br><br><br>
+
+  <section>
+    <div class="row container mx-auto sunum">
+      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+        <h2>Gururla Sunuyoruz!</h2>
+        <p>2023 Yılına Ait İstatiklerimiz</p>
+      </div>
+      <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+        <div class="row">
+          <div class="col-lg-6 col-sm-6 col-12 mb-4"> <span> <i
+                class="fa-regular fa-folder p-3"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span> 50.870.00
+            Karakter Çeviri
+          </div>
+          <div class="col-lg-6 col-sm-6 col-12 mb-4"> <span><i
+                class="fa-regular fa-file-pdf p-3"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span> 40.500 Sayfa
+            Yazılı Çeviri </div>
+          <div class="col-lg-6 col-sm-6 col-12 mb-4"> <span><i
+                class="fa-solid fa-suitcase p-3"></i>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            5.950 Yazılı
+            Çeviri projesi </div>
+          <div class="col-lg-6 col-sm-6 col-12 mb-4"><span><i
+                class="fa-solid fa-globe p-3"></i>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            623 Kurumsal Müşteri
+          </div>
+          <div class="col-lg-6 col-sm-6 col-12 mb-4"><span><i
+                class="fa-solid fa-microphone-lines p-3"></i>&nbsp;&nbsp;&nbsp;&nbsp;</span> 354 Sözlü
+            Çeviri Projesi </div>
+          <div class="col-lg-6 col-sm-6 col-12 mb-4"><span><i
+                class="fa-solid fa-user-graduate p-3"></i>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            200+
+            Profesyonel Tercüman </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rectangle">
+    <div class="row container mx-auto ">
+      <div class="col-12 col-md-4 text-center">
+        <span><i class="fa-regular fa-folder-open display-2 mb-4 text-info"></i></span>
+        <h4>TS EN ISO 17100 Standardı</h4>
+        <p>
+          Portakal Tercüme A.Ş. uluslararası geçerli standardı olan TS EN ISO 17100:2015 Standart Sertifikaları
+          kapsamında tercüme hizmeti vermektedir.
+        </p>
+      </div>
+      <div class="col-12 col-md-4 text-center">
+        <span><i class="fa-regular fa-clock display-2 mb-4 text-info"></i></span>
+        <h4>Zamanında Teslimat</h4>
+        <p>
+          Tercümeleriniz uzman çevirmen kadromuz tarafından kontrol edildikten sonra redaksiyon işleminden geçirilip
+          hatasız bir
+          şekilde size teslim edilmektedir.
+        </p>
+      </div>
+      <div class="col-12 col-md-4 text-center">
+        <span><i class="fa-solid fa-box display-2 mb-4 text-info"></i></span>
+        <h4>Kargo Hizmeti</h4>
+        <p>
+          Noter onayı ve yeminli tercüme gereken belgelerinizin çevirilerini ve onay işlemlerini tamamlayarak, E-posta,
+          Faks,
+          Kargo aracılığı ile adresinize gönderiyoruz.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="teklif">
+    <div class="row container mx-auto text-center">
+      <!-- <div class="col-12 col-md-6 form">
+        <h3 class="text-muted">Hemen Teklif Almak İçin Formu Doldurun</h3>
+        <a href="#"><button type="button" class="btn">HEMEN TEKLİF AL</button></a>
+      </div> -->
+      <div class="col-12 col-md-12">
+        <h3 class="text-muted">Whatsapp’dan İletişime Geçin</h3> <br>
+        <a href="whatsapp://send?phone=+905383161462"><button type="button" class="btn"><i
+              class="fa-brands fa-whatsapp">
+            </i> 538 316 14 62 </button></a>
+      </div>
+    </div>
+  </section>
 
 
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <!-- -----------------------      FOOTER   ----------------------------------- -->
 
+  <div class="footer-container M-0">
+    <div class="container">
+      <footer class="row py-5 mt-5 border-top">
+        <div class="col-12 col-md-6 mb-3">
+          <a href="#"><img src="./images/logo-detay.png" alt=""></a>
+          <ul class="list-unstyled d-flex">
+            <li><a class="btn btn-link btn-floating btn-lg text-primary" target="_blank"
+                href="https://tr-tr.facebook.com/" role="button" data-mdb-ripple-color="dark"><i
+                  class="fab fa-facebook-f"></i></a></li>
+            <li><a class="btn btn-link btn-floating btn-lg text-secondary" target="_blank"
+                href="https://www.instagram.com/" role="button" data-mdb-ripple-color="dark"><i
+                  class="fab fa-instagram"></i></a></li>
+            <li><a class="btn btn-link btn-floating btn-lg text-danger"
+                href="https://www.youtube.com/watch?v=KxzHQbXpD6c" target="_blank" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-youtube"></i></a></li>
+            <li><a class="btn btn-link btn-lg text-primary" target="_blank"
+                href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoidHIifQ%3D%3D%22%7D"
+                role="button" data-mdb-ripple-color="dark"><i class="fa-brands fa-twitter"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="col mb-3">
+          <h5>Tüm Çeviri Dilleri</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="text-dark">Türkçe-İngilizce</a></li>
+            <li class="nav-item mb-2"><a href="#" class="text-dark">Türkçe-Almanca</a></li>
+            <li class="nav-item mb-2"><a href="#" class="text-dark">Türkçe-Rusça</a></li>
+            <li class="nav-item mb-2"><a href="#" class="text-dark">Türkçe-Arapça</a></li>
+            <li class="nav-item mb-2"><a href="#" class="text-dark">Türkçe-Fransızca</a></li>
+          </ul>
+        </div>
+
+        <div class="col mb-3">
+          <h5>Tercüme Vadisi Hizmetler</h5>
+          <ul class="nav flex-column">
+            <li class=" mb-2"><a href="#" class="text-dark">Yeminli Çeviri</a></li>
+            <li class="nav-item mb-2"><a href="#" class="text-dark">Resmi Belge Çeviri</a></li>
+            <li class="nav-item mb-2"><a href="#" class="text-dark">Noter Tasdikli Çeviri</a>
+            </li>
+            <li class="nav-item mb-2"><a href="#" class="text-dark">Apostil Onaylı Çeviri</a>
+            </li>
+            <li class="nav-item mb-2"><a href="#" class="text-dark">Simultane Çeviri</a></li>
+          </ul>
+        </div>
+      </footer>
+      <div class="text-center border-top border-dark py-3">Tasarım Ve Kodlama : Samet Akkaya</div>
+    </div>
+  </div>
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
