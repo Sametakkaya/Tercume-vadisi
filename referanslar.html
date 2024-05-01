@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./styles.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ <title>Referanslar</title>
+</head>
+
+<body>
+ <!-- Üst Navbar'ı çağırma -->
+ <div class="top-navbar-container" id="top-navbar-container"></div>
+
+ <script>
+  // XMLHttpRequest kullanarak üst navbar dosyasını yükleme
+  var xhrTopNavbar = new XMLHttpRequest();
+  xhrTopNavbar.open('GET', 'top-navbar.html', true);
+  xhrTopNavbar.onreadystatechange = function () {
+   if (xhrTopNavbar.readyState === 4 && xhrTopNavbar.status === 200) {
+    document.getElementById('top-navbar-container').innerHTML = xhrTopNavbar.responseText;
+   }
+  };
+  xhrTopNavbar.send();
+ </script>
+
+ <!-- Alt Navbar'ı çağırma -->
+ <div class="navbar-container" id="navbar-container"></div>
+
+ <script>
+  // XMLHttpRequest kullanarak alt navbar dosyasını yükleme
+  var xhrNavbar = new XMLHttpRequest();
+  xhrNavbar.open('GET', 'navbar.html', true);
+  xhrNavbar.onreadystatechange = function () {
+   if (xhrNavbar.readyState === 4 && xhrNavbar.status === 200) {
+    document.getElementById('navbar-container').innerHTML = xhrNavbar.responseText;
+   }
+  };
+  xhrNavbar.send();
+ </script>
+
+ <div style="position: relative;">
+  <img class="img-fluid responsive-img opacity-25 mb-4" src="./images/reference2.jpg" alt="">
+  <div class="centered p-5">
+   <h2><b>Onlar Bizi Seçti, Şimdi Sıra Sizde</b></h2>
+   <p class="border-top border-dark">Bizi tercih eden firmalardan bazıları</p>
+  </div>
+ </div>
+
+ <div class="container mt-5">
+  <h3 class="text-center">Dünyanın önde gelen markaları ile iş ortağıyız.</h3>
+  <div>
+   <!-- <div class="circle mx-auto"></div> -->
+  </div>
+  <div class="row mx-auto mt-5" style="width: 80%;">
+   <img class="col-6 col-md-4 col-lg-3" src="./images/Mercedes-Benz_logo.svg.png" alt="">
+   <img class="col-6 col-md-4 col-lg-3" src="./images/ford.jpg" alt="">
+   <img class="col-6 col-md-4 col-lg-3" src="./images/toyota.jpg" alt="">
+   <img class="col-6 col-md-4 col-lg-3" src="./images/siemens2.jpg" alt="">
+   <img class="col-6 col-md-4 col-lg-3" src="./images/siemens3.jpg" alt="">
+   <img class="col-6 col-md-4 col-lg-3" src="./images/fujitsu-siemens.jpg" alt="">
+   <img class="col-6 col-md-4 col-lg-3" src="./images/thy-1-1.jpg" alt="">
+   <img class="col-6 col-md-4 col-lg-3" src="./images/abb.jpg" alt="">
+   <img class="col-6 col-md-4 col-lg-3" src="./images/eyup-sabri-tuncer.jpg" alt="">
+   <img class="col-6 col-md-4 col-lg-3" src="./images/watsons-1.jpg" alt="">
+   <img class="col-6 col-md-4 col-lg-3" src="./images/johnson-controls-1.jpg" alt="">
+   <img class="col-6 col-md-4 col-lg-3" src="./images/enka.jpg" alt="">
+  </div>
+ </div>
+
+ <!-- -----------------------      FOOTER   ----------------------------------- -->
+ <div class="footer-container" id="footer-container"></div>
+
+ <script>
+  // XMLHttpRequest kullanarak üst navbar dosyasını yükleme
+  var xhrFooter = new XMLHttpRequest();
+  xhrFooter.open('GET', 'footer.html', true);
+  xhrFooter.onreadystatechange = function () {
+   if (xhrFooter.readyState === 4 && xhrFooter.status === 200) {
+    document.getElementById('footer-container').innerHTML = xhrFooter.responseText;
+   }
+  };
+  xhrFooter.send();
+ </script>
+
+ <script src="script.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ <script src="https://kit.fontawesome.com/922e14d4eb.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
