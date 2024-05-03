@@ -81,5 +81,8 @@
 .footer-container{
   background-color: rgba(14, 14, 14, 0.917);
 }
-
-
+.bottom-border {
+  width: 60%; /* Yazının yarısı kadar genişlik */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.174); /* İstenilen border özellikleri */
+  margin: 1% auto; /* Merkezlemek için */
+}
