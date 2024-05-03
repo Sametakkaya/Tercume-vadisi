@@ -86,3 +86,6 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.174); /* İstenilen border özellikleri */
   margin: 1% auto; /* Merkezlemek için */
 }
+#button1, #button2, #button3{
+  min-width: 370px;
+}
