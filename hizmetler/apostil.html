@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Apostil Tasdikli Çeviri</title>
+</head>
+
+<body>
+
+  <!-- Üst Navbar'ı çağırma -->
+  <div class="top-navbar-container" id="top-navbar-container"></div>
+
+  <script>
+    // XMLHttpRequest kullanarak üst navbar dosyasını yükleme
+    var xhrTopNavbar = new XMLHttpRequest();
+    xhrTopNavbar.open('GET', '../top-navbar.html', true);
+    xhrTopNavbar.onreadystatechange = function () {
+      if (xhrTopNavbar.readyState === 4 && xhrTopNavbar.status === 200) {
+        document.getElementById('top-navbar-container').innerHTML = xhrTopNavbar.responseText;
+      }
+    };
+    xhrTopNavbar.send();
+  </script>
+
+  <!-- Alt Navbar'ı çağırma -->
+  <div class="navbar-container" id="navbar-container"></div>
+
+  <script>
+    // XMLHttpRequest kullanarak alt navbar dosyasını yükleme
+    var xhrNavbar = new XMLHttpRequest();
+    xhrNavbar.open('GET', '../navbar.html', true);
+    xhrNavbar.onreadystatechange = function () {
+      if (xhrNavbar.readyState === 4 && xhrNavbar.status === 200) {
+        document.getElementById('navbar-container').innerHTML = xhrNavbar.responseText;
+      }
+    };
+    xhrNavbar.send();
+  </script>
+
+
+  <div style="position: relative;">
+    <img class="img-fluid responsive-img opacity-25 mb-4" src="../images/apostil-nedir-apostil-islemi-3.jpg" alt="">
+    <div class="centered p-5">
+      <h2><b>Apostil Tasdikli Çeviri</b></h2>
+      <p class="border-top border-dark">Profesyonel Tercüman Kadromuz ile, <br>Çeviri İhtiyaçlarınıza Uygun Fiyatlı
+        Çözümler Sunuyoruz!</p>
+    </div>
+  </div>
+
+  <section class="container py-5">
+    </div>
+    <div class="my-5">
+      <h3><i class="fa-solid fa-diamond p-1 text-info fs-5"></i> Apostil Tasdiki Nedir?</h3>
+      <p>
+        1961 yılında ülkeler arasında akdedilen Lahey Anlaşması (Konvansiyonu) ile sözleşmenin üye devletleri için
+        yabancı resmi
+        belgelerin yasallaştırma şartlarını kaldırmıştır. Sözleşme, bir ülkede düzenlenen ve farklı bir ülkede kullanmak
+        üzere
+        resmi belgelere konulan özel bir kaşe ile konsolosluk onayı yerine apostil konulmasını yeterli kıldı.
+      </p>
+    </div>
+    </div>
+    <div class="my-5">
+      <h3><i class="fa-solid fa-diamond p-1 text-info fs-5"></i> Tasdik İçin İstenilen Belgeler</h3>
+      <ul>
+        <li>Tasdik edilecek resmi belge.</li>
+        <li>Belgeyi getiren kişinin, üzerinde T.C. Kimlik Numarası yer alan kimliği.</li>
+        <li>Belgeyi getiren kişi yabancı uyruklu ise pasaportu veya ikamet tezkeresi.</li>
+        <li>Şirketler veya vize firmaları tarafından, farklı kişilere ait belgeler getirilmesi halinde, şirketin antetli
+          kağıdına
+          düzenlenmiş ve kişilerin isimlerinin yer aldığı liste.</li>
+      </ul>
+    </div>
+    </div>
+    <div class="my-5">
+      <h3><i class="fa-solid fa-diamond p-1 text-info fs-5"></i> Apostil veya Tasdik Şerhi Nerede ve Nasıl Yapılır?</h3>
+      <p class="m-0">
+        Tasdik işlemleri Resmi belge tercüme işlemi bittikten sonra, Valilik Hukuk Büroları veya İlçe
+        Kaymakamlıkları
+        tarafından
+        yapılmaktadır.
+      </p>
+      <p class="m-0">
+        Apostil yapılacak olan belgede ıslak resmi mühür ve imza olunması zorunludur (e-imza, hazır kaşe
+        imza,
+        apostil
+        yetkilisinin yerine atılan imza kabul edilmez).</p>
+      <p class="m-0">Savcılık belgelerinin apostili Cumhuriyet Başsavcılıklarında yapılır.</p>
+      <p class="m-0">Lahey Anlaşması üye olmayan ülkelerin belgeleri Valilik Hukuk Büroları tarafından yapılır.</p>
+      <p class="m-0">Bir evrak birkaç dakika içinde tasdik edilmektedir. Apostil ile belgenin tasdik işlemi ücretsizdir.
+      </p>
+    </div>
+    </div>
+    <div class="my-5">
+      <h3><i class="fa-solid fa-diamond p-1 text-info fs-5"></i> Apostil Hangi Belgelere Yapılır?</h3>
+      <p> Apostil tasdiki yapılan evraklardan bazıları </p>
+      <ul>
+        <li>İdari belgeler,</li>
+        <li>Noter senetleri,</li>
+        <li>Eğitim belgeleri : okul, lise üniversite diplomaları vs.</li>
+        <li>Medeni durumu gösteren belgeler: doğum belgeleri, evlilik cüzdanları, evlenme ehliyeti vs.</li>
+        <li>Vekaletnameler, muvafakatnameler,</li>
+        <li>Sivil, aile ve ceza davalarının belgeleri ve mahkeme kararları,</li>
+        <li>Devlet kurumu tarafından verilen kuruluş belgeleri, ana sözleşmeler, patent ve diğer belgeler.,</li>
+        <li>Kişilerce özel sıfatla imzalanmış belgeler üzerine konulmuş olup belgenin kaydının veya belirli bir tarihte
+          mevcut
+          olduğunun ve imzaların doğruluğunun resmi makam ve noterlerce tasdiki gibi resmi beyanlar</li>
+        <li>Resmi devlet mercileri tarafından verilen her türlü belgeye apostil hemen konulabilir.</li>
+        <li>Sağlık raporları: yetkili Sağlık Müdürlükleri tarafından onaylandıktan sonra Apostil kaşesi ile tasdik
+          edilir.
+        </li>
+        <li>Ticari evraklar: ilgili Sanayi ve Ticaret odası tarafından onaylandıktan sonra Apostil ile tasdik olunur.
+        </li>
+        <li>Yüksek veya Akademik eğitim kurumları tarafından verilen diplomalar: üniversite kurumunun Merkez Yönetici
+          Makamı
+          tarafından onaylandıktan sonra Apostil ile tasdik olunur.</li>
+        <li>Resmi olmayan evrakların doğruluğu Türk Noterleri tarafından tasdik edilir ve devamında apostil konulur.
+        </li>
+        <li>Şirket veya gerçek kişi tarafından düzenlenen belgede bulunan her bir imzanın noter tasdiki gerektirdiği
+          için
+          belgenin
+          noter tasdiki yapıldıktan sonra apostil konulur.</li>
+        <li>Diplomasi ve konsolosluk evrakları, banka belgeleri, ticari yazışmalar, ticari veya gümrük işlemlere
+          ilişkisi
+          olan
+          belgelere (sınır dışı malların sevkine ilişkin vekaletnameler ve irsaliyeler, mal veya hizmet tedarik
+          sözleşmeleri,
+          sözleşme kapsamında iş bitirme ve hakkediş belgeleri vs.) apostil konulmaz. Genel olarak, konsolosluk onayı
+          alınır.
+        </li>
+      </ul>
+    </div>
+    <div class="my-5">
+      <h3><i class="fa-solid fa-diamond p-1 text-info fs-5"></i> Apostilin Geçerlilik Süresi</h3>
+      <p>Apostillerde geçerlilik süresi yoktur. Fakat apostil’in yapıldığı belgenin bir geçerlilik süresi vardır.
+        Örneğin:
+        Vekalet belgesine apostil yaptırdıysanız, velaketin süresi geçtiğinde buna bağlı olarak apostil de otomatik
+        olarak
+        geçersiz olur. Bir başka örnek ise; nüfüs kayıt örnekleri 6 ay geçerlidir. Dolayısı ile apostil tasdiki
+        yaptırdığınız
+        evrakın geçerliliği süre bu kadardır.</p>
+    </div>
+    <div class="my-5">
+      <h3><i class="fa-solid fa-diamond p-1 text-info fs-5"></i> Apostil Hizmeti Verdiğimiz Diller</h3>
+      <ul>
+        <li>İngilizce Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Almanca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Arapça Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>İspanyolca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Fransızca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>İtalyanca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Rusça Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Portekizce Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Karadağca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Çince Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Bulgarca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Çekçe Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Ukraynaca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Japonca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Korece Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Azerice Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Yunanca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Farsça Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Felemenkçe Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Makedonca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Romence Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Kazakça Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Danca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Sırpça Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Kürtçe Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Türkmence Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Boşnakça Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Gürcüce Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Moldovaca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Norveççe Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Estonyaca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Ermenice Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Macarca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Katalanca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Latince Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>İsveççe Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Fince Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Slovence Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Filipince Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Hırvatça Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Belarusça Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Laoca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>İbranice Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>İzlandaca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Rumca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Arnavutça Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Maltaca Türkçe Apostil Tasdik Şerhi Çevirisi </li>
+        <li>Hintçe Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Endonezce Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Litvanca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Lehçe Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Letonca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Özbekçe Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Vietnamca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Tacikçe Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Kırgızca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Tayca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Moğolca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Galce Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Urduca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Burmaca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Tatarca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Khmerce Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Bengalce Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Tibetçe Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+        <li>Afganca Türkçe Apostil Tasdik Şerhi Çevirisi</li>
+    </div>
+  </section>
+
+  <!-- ---------------------footer----------------------------  -->
+  <div class="footer-container" id="footer-container"></div>
+  <script>
+    // XMLHttpRequest kullanarak üst navbar dosyasını yükleme
+    var xhrFooter = new XMLHttpRequest();
+    xhrFooter.open('GET', '../footer.html', true);
+    xhrFooter.onreadystatechange = function () {
+      if (xhrFooter.readyState === 4 && xhrFooter.status === 200) {
+        document.getElementById('footer-container').innerHTML = xhrFooter.responseText;
+      }
+    };
+    xhrFooter.send();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/922e14d4eb.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Resmi Belge Çevirisi</title>
+</head>
+
+<body>
+
+  <!-- Üst Navbar'ı çağırma -->
+  <div class="top-navbar-container" id="top-navbar-container"></div>
+
+  <script>
+    // XMLHttpRequest kullanarak üst navbar dosyasını yükleme
+    var xhrTopNavbar = new XMLHttpRequest();
+    xhrTopNavbar.open('GET', '../top-navbar.html', true);
+    xhrTopNavbar.onreadystatechange = function () {
+      if (xhrTopNavbar.readyState === 4 && xhrTopNavbar.status === 200) {
+        document.getElementById('top-navbar-container').innerHTML = xhrTopNavbar.responseText;
+      }
+    };
+    xhrTopNavbar.send();
+  </script>
+
+  <!-- Alt Navbar'ı çağırma -->
+  <div class="navbar-container" id="navbar-container"></div>
+
+  <script>
+    // XMLHttpRequest kullanarak alt navbar dosyasını yükleme
+    var xhrNavbar = new XMLHttpRequest();
+    xhrNavbar.open('GET', '../navbar.html', true);
+    xhrNavbar.onreadystatechange = function () {
+      if (xhrNavbar.readyState === 4 && xhrNavbar.status === 200) {
+        document.getElementById('navbar-container').innerHTML = xhrNavbar.responseText;
+      }
+    };
+    xhrNavbar.send();
+  </script>
+
+
+  <div style="position: relative;">
+    <img class="img-fluid responsive-img opacity-25 mb-4" src="../images/simultane-ceviri.jpg" alt="">
+    <div class="centered p-5">
+      <h2><b>Resmi Belge Çevirisi</b></h2>
+      <p class="border-top border-dark">Profesyonel Tercüman Kadromuz ile, <br>Çeviri İhtiyaçlarınıza Uygun Fiyatlı
+        Çözümler Sunuyoruz!</p>
+    </div>
+  </div>
+
+  <section class="container py-5">
+    <div class="my-5">
+      <h3><i class="fa-solid fa-diamond p-1 text-info fs-5"></i> Resmi Belge Çeviri Hizmeti</h3>
+      <p>
+        Eğitimin önemini bilen ve öğrenci ve öğretim görevlilerimizi dikkate alan Portakal Tercüme, özel fiyatlar ve
+        özel
+        hizmetler ile eğitim ve öğretim üyelerini de unutmadan hizmet vermektedir.
+      </p>
+      <p>
+        Portakal Tercüme, noter tasdikli ve yeminli çeviriler yaparak resmi belge tercüme hizmetinizi en kolay şekilde
+        tamamlamanıza gayret göstermektedir. Bu bağlam hızlı kargo ve süresiz arşiv hizmetleri de tüm müşterilerimize
+        ayrıcalık olarak sağlanmaktadır.
+      </p>
+    </div>
+    <div class="my-5">
+      <h3><i class="fa-solid fa-diamond p-1 text-info fs-5"></i> Resmi Belge Çevirisi Nedir</h3>
+      <p>
+        Resmi belge çevirisi, yabancı bir ülkenin kurumlarından yine yabancı bir dilde yazılmış evraktır. Özel sektörden
+        devlet kurumlarına her yerde ihtiyaç duyulan ve günlük işlerin belirli bir düzen içerisinde yapılmasını sağlayan
+        yazılı bir unsurdur.</p>
+      <p>
+        Resmi belge tercümesi yapabilmek için belgenin yazıldığı dili kullanan ülke hakkında da bilgili olmak
+        gerekmektedir.
+        Aksi halde belge tercümesi sebebiyle bir çok problem yaşanabilmektedir. Özellikle dillerden biri hakkında fikir
+        sahibi
+        olmayan müşteri, belgenin doğruluğu konusunda sıkıntılar yaşayabilmekte ve belgeyi vermek istediği kurum
+        tarafından geri
+        çevrilebilmektedir.
+      </p>
+    </div>
+    <div class="my-5">
+      <h3><i class="fa-solid fa-diamond p-1 text-info fs-5"></i> Noter Tasdiki Gereken Belgelerin Bazıları</h3>
+      <ul>
+        <li>Sabıka kaydı</li>
+        <li>Pasaport</li>
+        <li>Sözleşmeler</li>
+        <li>İkamet senedi</li>
+        <li>Sertifikalar</li>
+        <li>Banka dökümanları ve hesap defterleri</li>
+        <li>Mahkeme kararları</li>
+      </ul>
+    </div>
+    <div class="my-5">
+      <h3><i class="fa-solid fa-diamond p-1 text-info fs-5"></i> Pasaport Tercüme Hizmeti</h3>
+      <p> Yıllardan beri tercüme konusunda güvenebileceğiniz en doğru adreste olduğunuzu sizlere garanti edebiliriz.
+        Yardımcı
+        olduğumuz kategorilerimizden biri Pasaport Tercümesi olmaktadır. Bundan böyle sizlerde bu alanda destek verecek
+        olan tek
+        gerçek site olmaya devam edeceğimizi de belirtelim.
+
+        Çeviri hususunda her zaman eksiksiz ve hatasız bir şekilde hizmet almak için biçilmiş bir kaftan olduğumuzu da
+        yineleyelim. Eğer İstanbul’daysanız tercümanlık büromuza bizzat gelerek de işlerinizi kısa süre içerisinde
+        görebilirsiniz. Biz, tercümanlık sektöründe uzun senelerden beri rakiplerinin bir adım önünde yer almayı
+        başarmış ve her
+        biri kendi dil alanında uzman çevirmenlerle sizlere destek olduğumuzu da asla unutmayınız.</p>
+      <p>
+        Noter Yeminli Tercüme, kelime anlamı olarak tercüme işinde uzman kişi tarafından çevrilmiş belgelerdir.
+        Yapılacak her
+        tercüme yeminli tercüme gerektirmemektedir. Normal belgeler sadece tercümanlar tarafından çevrilebilir. doğum
+        belgesi,
+        evlik belgesi, lise diploması, üniversite diplomaları gibi hukuksal belgeler kesinlikle yeminli tercüme
+        gerektirmektedir.
+      </p>
+      <p>
+        Pasaport çevirisi alanında da bu isteklerinizi yerine getirebileceğinizi hatırlatalım. Türkiye’ nin en büyük ve
+        hızlı
+        servis ağı olan tercüme bürosu olarak bütün şehirlerde ki binlerce kişiye yardımcı olacağımızı da biliniz.
+      </p>
+      <p>
+        Her daim sorunsuz ve memnun kalacağınız, bunun haricinde en az parayı ödeyeceğiniz çevirileriniz için
+        vazgeçemeyeceğiniz
+        bir portalda yer aldığınızı da aklınızdan çıkarmayınız. Çeviri bürosu çalışmalarında farklı bakış açısını her
+        alanda
+        sizlere sunan adresimize bir an önce giriş yaparak gerekli bilgileri alabileceğinizi bir kez daha hatırlatmak
+        istiyoruz.
+        Herkese keyifli ve iyi bir hafta dileriz.
+      </p>
+    </div>
+    <div class="my-5">
+      <h3><i class="fa-solid fa-diamond p-1 text-info fs-5"></i> Ehliyet Çevirisi – Sürücü Belgesi Tercümesi</h3>
+      <p> Türkiye’de araba kullanma ihtiyacı bulunan yabancı vatandaşlar ya da Türkiye dışında araba kullanması gereken
+        vatandaşlarımızın ehliyetleri tercüme edilmelidir. Böylece araba kullanmaya yetkin olduklarını gittikleri ülkede
+        gösterebileceklerdir. Bu sebeple yapılan ehliyet çevirisi ya da sürücü belgesi tercümesi hizmeti Portakal
+        Tercüme
+        tarafından uzman tercüman ekipleri ile yapılmaktadır.</p>
+    </div>
+    <div class="my-5">
+      <h3><i class="fa-solid fa-diamond p-1 text-info fs-5"></i> Kimlik Belgesi Tercümesi</h3>
+      <p>
+        Bir ülkeye aidiyetinizi gösteren özel kamu kurum ve kuruluşlarında sizden istenen nüfus cüzdanı çevirisi,
+        yurtdışında
+        birçok kamu kurum ve kuruluşlarında pasaportunuzun çevirisini de sizden istenebilir. Tecrübeli, güvenilir ve
+        sağlıklı
+        bir tercüme için çevrilecek dili tam olarak bilen, o millete ait kültürü de tanıyan kişilerle çalışmak
+        gerekmektedir.
+      </p>
+      <p>
+        Çeşitli nedenlerden dolayı yurtdışı işleriniz olabilir. Kimliklerinizin çevirisi gerekiyor olabilir. Kaliteli,
+        doğru ve
+        güvenilir kimlik çevirisi için hizmetinizde olan firmamız ve profesyonel ekibimizle sizlere hizmet vermekteyiz.
+      </p>
+      <p>
+        Kaliteli hizmet anlayışını ön planda tutan, öncelikle müşteri memnuniyeti prensibini benimseyen firmamız,
+        Türkiye
+        Cumhuriyeti içerisinde devlet kurumları tarafından sizlerden talep edilen bu resmi belgeyi sizler için
+        hazırlamaktadır.
+        Uygun fiyat anlayışımızla kimlik tercümesi işlerinizde sizlerin yanındayız.
+      </p>
+      <p>
+        Nüfus cüzdanı tercümesi işlerinizi birebir yapmaktayız. İşlevsel bir çevirinin yapılabilmesi için çevirisi
+        yapılacak
+        dilin milletinin kültürünün, dilinin iyi bilinmesi gerekir ki sağlıklı ve anlaşılabilir bir çeviri olsun.
+        Çevrilecek
+        belge resmi bir evrak olunca haliyle dilin iyi bilinmesi gerekmektedir. Çeviriyi yapacak kişi belgeyi, belgenin
+        gideceği
+        ülkenin kültürüne göre uyumlaştırmalıdır. Çünkü çevirinin amacı budur, yani resmi belgenin anlaşılması ve işleme
+        koyulabilmesidir önemli olan.
+      </p>
+      <p>
+        Firmamız tecrübesi ile sizler için, olası sıkıntılara mahal vermeden, yaptığımız resmi belge tercümesi ile
+        alakalı
+        devirdiğimiz bu hizmet ile işlerinizi en hızlı şekilde tamamlamaktadır. Gittiğiniz ülkede sorun yaşamamanız için
+        doğru
+        adrestesiniz. Hazırladığımız Nüfus cüzdanı belgesi sayesinde işlerinizi kolaylıkla halledeceksiniz.
+      </p>
+    </div>
+    <div class="my-5">
+      <h3><i class="fa-solid fa-diamond p-1 text-info fs-5"></i> Nüfus Cüzdanı Tercüme Hizmetleri</h3>
+      <p>Bir devletin egemenliği altında yaşayan kişilere devletçe verilen kişisel durumlarını gösteren resmi belgeye
+        nüfus
+        cüzdanı denir.</p>
+      <p>
+        Başvuru yapacağınız kamu ve özel kurumlarda o ülkenin dilinde Nüfus cüzdanı tercümesi istenebilir. Kaliteli
+        hizmet
+        anlayışını ön planda tutan, öncelikle müşteri memnuniyeti prensibini benimseyen firmamız, O ülke içerisinde
+        resmi
+        kurumları tarafından sizlerden talep edilen bu resmi belgeyi sizler için hazırlamaktadır.
+      </p>
+      <p>
+        Uygun fiyat anlayışımızla kimlik tercümesi işlerinizde sizlerin yanındayız. Bu durumlarda en uygun fiyatlarla
+        Portakal
+        Tercüme Bürosuna gelerek size en hızlı şekilde nüfus cüzdanı tercümenizi teslim edebiliriz. Genellikle nüfus
+        cüzdanı
+        çevirisi vize işlemleri için, okul için ve iş için yapılmaktadır.
+      </p>
+      <p>
+        Nüfus cüzdanı tercümesi yapılırken yeminli tercüme bürosu (Portakal Yeminli tercüme Bürosu)ndan yapılmalıdır.
+        Çünkü
+        yapılacak nüfus cüzdanı tercümesi vereceğiniz resmi kurum ancak bu şekilde kabul eder.
+      </p>
+      <p>
+        Nüfuz cüzdanı tercümesi yeminli tercümesi onayı olduktan sonra bazı makamlar noter tasdik işlemi de
+        istemektedir. Noter
+        tasdik işlemini bizim anlaşmalı olduğumuz noterlerde noter tasdik işlemini notere ek bir ücret ödeyerek
+        yapabilirsiniz.
+      </p>
+    </div>
+    <div class="my-5">
+      <h3><i class="fa-solid fa-diamond p-1 text-info fs-5"></i> Hatasız Evlilik Cüzdanı Tercümesi</h3>
+      <p> Pek çok hukuki anlamda geçerliliği olan ve talep edilen aile cüzdanı bazen yabancı kurumlara da
+        verilebilmektedir. Ancak
+        kendi dilinizde olan cüzdanınız bu kurumlar için bir anlam ifade etmeyecektir. Dolayısı ile ihtiyacınız olan şey
+        içinde
+        yer alan bilgilerin eksiksiz, hatasız ve tam anlamı ile tercüme edilmesidir. Firmamız, bünyesinde barındırdığı
+        yeminli
+        tercümanlar ile bu ihtiyacınıza oldukça kısa sürede yanıt vermektedir. Artık vize başvuruları, pasaport alma
+        süreci,
+        ortak banka hesap işlemleri ve diğer birçok konuda gerekli tercüme katkısını alabilirsiniz.</p>
+    </div>
+    <div class="my-5">
+      <h3><i class="fa-solid fa-diamond p-1 text-info fs-5"></i> Yeminli ve Noter Tasdikli Tercüme</h3>
+      <p> Genel olarak gerek duyulan İngilizce olmak üzere, dünya genelinde konuşulan pek çok dil içinde tamamen dört
+        dörtlük bir
+        çeviriye imza atacağımız müjdesini vermek isteriz. Üstelik evlilik cüzdanı tercüme sürecini yeminli, bununla da
+        yetinmeyip talep ederseniz noter onaylı şekilde yapabildiğimizi de söylemeliyiz. Bu döneme kadar yapmış
+        olduğumuz
+        sayısız iş ve bünyemizde bulunan müşteri portföyümüz ne denli doğru bir seçim yapmış olacağınızın da ispatı
+        niteliğindedir. Artık her gerektiğinde yetkililere verebileceğiniz sorunsuz bir tercümeyi elinizin altında
+        bulundurmak
+        istediğinizde bunu bizimle hemen başarabileceğinizi de unutmamalısınız.</p>
+    </div>
+    <div class="my-5">
+      <h3><i class="fa-solid fa-diamond p-1 text-info fs-5"></i> Kaşeli Çeviri Hizmetinin Tek Adresiyiz</h3>
+      <p> Konsolosluklara yapacağınız bazı başvurularda yetkililerin sadece tercüme edilmiş evlenme cüzdanı kabul edip
+        etmediğini
+        de öğrenmelisiniz. Tüm bu işlemlerin profesyonel olarak yapıldığını kabul etmeleri için altında kaşe bulunan
+        evraklara
+        önem verdiklerini de yeri gelmişken söylemeliyiz. Bilgilerinizi hiç bir şekilde üçüncü bir şahıs ile
+        paylaşmayan, tüm
+        süreci gizlilik prensipleri ile yerine getiren adresimiz, aynı zamanda tercüme ücretleri noktasında da sizi
+        mutlu etmeyi
+        başaracaktır. Yıl boyu en uygun fiyat teklifleri ile gerek duyulan dile dair çeviri işlerinizi 3 kontrollü aşama
+        ile
+        yapmakta ve tek bir hata olmadan sizlere tam da zamanında teslim etmekteyiz.</p>
+      <p>
+        Buna benzer daha birçok resmi belgelerinizde Portakal Tercüme olarak Noter ve Adli yeminli geniş tercüman
+        kadromuzla 20
+        yılın vermiş olduğu deneyim ve tecrübeyle siz değerli müşterilerimize hizmet vermekteyiz.
+      </p>
+    </div>
+  </section>
+
+
+  <div class="footer-container" id="footer-container"></div>
+  <script>
+    // XMLHttpRequest kullanarak üst navbar dosyasını yükleme
+    var xhrFooter = new XMLHttpRequest();
+    xhrFooter.open('GET', '../footer.html', true);
+    xhrFooter.onreadystatechange = function () {
+      if (xhrFooter.readyState === 4 && xhrFooter.status === 200) {
+        document.getElementById('footer-container').innerHTML = xhrFooter.responseText;
+      }
+    };
+    xhrFooter.send();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/922e14d4eb.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
