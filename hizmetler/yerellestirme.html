@@ -15,32 +15,10 @@
   <!-- Üst Navbar'ı çağırma -->
   <div class="top-navbar-container" id="top-navbar-container"></div>
 
-  <script>
-    // XMLHttpRequest kullanarak üst navbar dosyasını yükleme
-    var xhrTopNavbar = new XMLHttpRequest();
-    xhrTopNavbar.open('GET', '../top-navbar.html', true);
-    xhrTopNavbar.onreadystatechange = function () {
-      if (xhrTopNavbar.readyState === 4 && xhrTopNavbar.status === 200) {
-        document.getElementById('top-navbar-container').innerHTML = xhrTopNavbar.responseText;
-      }
-    };
-    xhrTopNavbar.send();
-  </script>
 
   <!-- Alt Navbar'ı çağırma -->
   <div class="navbar-container" id="navbar-container"></div>
 
-  <script>
-    // XMLHttpRequest kullanarak alt navbar dosyasını yükleme
-    var xhrNavbar = new XMLHttpRequest();
-    xhrNavbar.open('GET', '../navbar.html', true);
-    xhrNavbar.onreadystatechange = function () {
-      if (xhrNavbar.readyState === 4 && xhrNavbar.status === 200) {
-        document.getElementById('navbar-container').innerHTML = xhrNavbar.responseText;
-      }
-    };
-    xhrNavbar.send();
-  </script>
 
 
   <div style="position: relative;">
@@ -88,6 +66,8 @@
     xhrFooter.send();
   </script>
 
+
+  <script src="hizmetler.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
