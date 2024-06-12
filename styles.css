@@ -89,3 +89,15 @@
 #button1, #button2, #button3{
   min-width: 370px;
 }
+
+.whatsapp-icon {
+  position: fixed;
+  left: 10px;
+  text-align: right;
+  bottom: 10px;
+  width: 5%;
+  min-width: 60px;
+}
+.whatsapp-icon img {
+  width: 100%;
+}
