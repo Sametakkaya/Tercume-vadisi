@@ -18,6 +18,16 @@
     };
     xhrNavbar.send();
 
+    // XMLHttpRequest kullanarak country(tercüme dilleri) dosyasını yükleme
+    var xhrCountry = new XMLHttpRequest();
+    xhrCountry.open('GET', './tercume-dilleri.html', true);
+    xhrCountry.onreadystatechange = function () {
+      if (xhrCountry.readyState === 4 && xhrCountry.status === 200) {
+        document.getElementById('country-container').innerHTML = xhrCountry.responseText;
+      }
+    };
+    xhrCountry.send();
+
 
     // Footer Script //
   // XMLHttpRequest kullanarak üst navbar dosyasını yükleme
