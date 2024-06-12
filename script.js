@@ -63,3 +63,16 @@ window.onload = function() {
     selectButton(firstButton);
     writeText('<p>Tercüme Vadisi olarak size en uygun çeviri hizmetini verebilmek için alanında uzman tercüman ekibimiz ile çalışıyor, en uygun tercüme hizmetini sunuyoruz.</p> <p>Ayrıca almak istediğiniz çeviri hizmetinin sektörün en kaliteli tercümanlık bürosu tarafından yapılması bir çok avantajı da beraberinde getirmektedir. Hızlı ve güvenilir hizmet kapasitesine sahip çevirmen ekibiyle Portakal Tercüme süresiz arşiv ve hızlı kargo özellikleri ile Türkiyenin lider tercüme ajansıdır.</p> <p>En ucuz çeviri hizmetlerini sağlayan firmalardan biri olan Portakal Tercüme Ofisi, yeminli, noter tasdikli, apostil tasdikli uygun tercümanlık hizmetleri de vermektedir.');
   };
+
+// Navbarın Herhangi bir yere dokunulduğunda kapanması //
+document.addEventListener('click', function (event) {
+    var navbar = document.querySelector('.navbar-collapse');
+    var isClickInside = navbar.contains(event.target) || event.target.classList.contains('navbar-toggler');
+
+    if (!isClickInside) {
+        var bsCollapse = new bootstrap.Collapse(navbar, {
+            toggle: false
+        });
+        bsCollapse.hide();
+    }
+});
