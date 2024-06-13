@@ -1,3 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#sunum {
+    background-image: url('images/background3.jpg');
+    background-size: cover; /* Görselin tüm sayfayı kaplamasını sağlar */
+    background-repeat: no-repeat; /* Görselin tekrar etmesini engeller */
+    background-attachment: fixed; /* Görselin sayfa ile kaymasını engeller */
+    
+}
 @media only screen and (max-width: 1201px) {
 
 }
