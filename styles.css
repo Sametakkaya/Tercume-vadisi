@@ -3,8 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
+    background-color: #b6aaaa; /* Arka plan rengini burada değiştirebilirsiniz */
+    font-family: Arial, sans-serif;
+}
+#sunum {
     background-image: url('images/background3.jpg');
     background-size: cover; /* Görselin tüm sayfayı kaplamasını sağlar */
     background-repeat: no-repeat; /* Görselin tekrar etmesini engeller */
