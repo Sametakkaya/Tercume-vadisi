@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-#sunum {
+
+body {
     background-image: url('images/background3.jpg');
     background-size: cover; /* Görselin tüm sayfayı kaplamasını sağlar */
     background-repeat: no-repeat; /* Görselin tekrar etmesini engeller */
