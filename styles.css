@@ -10,11 +10,6 @@
     background-attachment: fixed; /* Görselin sayfa ile kaymasını engeller */
     
 }
-.vitrin-text{
-  font-size:x-large;
-  font-weight: bold;
-  color: #000000;
-}
 @media only screen and (max-width: 1201px) {
 
 }
