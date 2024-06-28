@@ -76,3 +76,20 @@ document.addEventListener('click', function (event) {
         bsCollapse.hide();
     }
 });
+
+// Scroll event'i dinle
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollTopButton").style.display = "block";
+    } else {
+        document.getElementById("scrollTopButton").style.display = "none";
+    }
+}
+
+// Butona tıklanınca sayfanın başına dön
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
