@@ -93,3 +93,13 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+ document.getElementById('banner-close').addEventListener('click', function() {
+            document.getElementById('banner').style.display = 'none';
+        });
+
+        document.getElementById('banner').addEventListener('click', function(event) {
+            if (event.target.id === 'banner') {
+                document.getElementById('banner').style.display = 'none';
+            }
+        });
